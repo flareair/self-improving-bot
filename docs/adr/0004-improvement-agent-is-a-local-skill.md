@@ -1,0 +1,5 @@
+# The Improvement Agent is a local Claude Code skill, not a deployed Managed Agent
+
+The original framing was "another agent" analyzing past Support Agent sessions, implying a second Managed Agents deployment. Instead, it's a local Claude Code skill: invoked manually, it pulls session data via the Sessions API (list + per-session retrieve — there's no bulk export), analyzes all available sessions each run (no cursor/incremental state, since prototype volume is low), aggregates findings by root cause, presents a suggestion list, pauses for human approval, then applies accepted suggestions to Policy Files or the Support Agent's system prompt in this repo and opens a PR.
+
+We rejected deploying it as a Managed Agent (scheduled or on-demand) because it adds cursor/state management and autonomous-execution risk with no real benefit at prototype scale — a human is already in the loop reviewing every session batch and every suggestion, so there's nothing gained from running it as a standing server-hosted agent instead of a script the human runs themselves.
