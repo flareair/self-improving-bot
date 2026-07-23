@@ -1,4 +1,4 @@
-# The Improvement Agent is a local Claude Code skill, not a deployed Managed Agent
+# The Agent Improver is a local Claude Code skill, not a deployed Managed Agent
 
 The original framing was "another agent" analyzing past Support Agent sessions, implying a second Managed Agents deployment. Instead, it's a local Claude Code skill: invoked manually, it pulls session data via the Sessions API (list + per-session retrieve — there's no bulk export), analyzes all available sessions each run (no cursor/incremental state, since prototype volume is low), aggregates findings by root cause, presents a suggestion list, pauses for human approval, then applies accepted suggestions to Policy Files or the Support Agent's system prompt in this repo and opens a PR.
 

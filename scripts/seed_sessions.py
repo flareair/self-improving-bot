@@ -2,7 +2,7 @@
 """Seed the deployment with sample Support Agent sessions.
 
 Runs a handful of scripted conversations against the live Support Agent so
-the Improvement Agent has real session history to analyze the first time
+the Agent Improver has real session history to analyze the first time
 it's run. Requires the Support Agent to already be deployed
 (scripts/deploy_support_agent.py) and the Policy Files already pushed
 (scripts/upsert_policies.py).
@@ -21,7 +21,7 @@ MEMORY_RESOURCE_INSTRUCTIONS = (
 )
 
 # Each entry is one simulated employee session. They're chosen to exercise
-# different behaviors so the Improvement Agent has a mix of root causes to
+# different behaviors so the Agent Improver has a mix of root causes to
 # find: a clean answer, a query spanning two policies, a genuine content gap
 # (nothing in policies/ covers it), a cap-testing multi-part question, and a
 # real cross-policy inconsistency (expense-reimbursement.md says 45 days,
@@ -123,7 +123,7 @@ def main() -> None:
         print(f"  {sid}")
     print(
         "\nNext: python scripts/fetch_sessions.py   (pull transcripts locally),\n"
-        "then run the Improvement Agent skill (.claude/skills/improvement-agent/)."
+        "then run the Agent Improver skill (.claude/skills/agent-improver/)."
     )
 
 

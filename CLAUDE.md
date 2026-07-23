@@ -29,10 +29,10 @@ again after `pyproject.toml` changes).
   Support Agent yourself.
 - `uv run scripts/fetch_sessions.py` — pulls every Support Agent session and
   transcript to `analysis/sessions/` (gitignored scratch cache). This is the
-  data-gathering step the `improvement-agent` skill runs first.
+  data-gathering step the `agent-improver` skill runs first.
 
-## Improvement Agent
+## Agent Improver
 
-Run the `improvement-agent` Claude Code skill (`.claude/skills/improvement-agent/`)
+Run the `agent-improver` Claude Code skill (`.claude/skills/agent-improver/`)
 on demand to review past sessions and propose Policy File or system-prompt
 fixes for human approval.

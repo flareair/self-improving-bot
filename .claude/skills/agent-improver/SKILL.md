@@ -1,12 +1,12 @@
 ---
-name: improvement-agent
+name: agent-improver
 description: Reviews past Support Agent sessions via the Sessions API, judges the root cause behind each (Policy File content gap vs Support Agent system-prompt behavior), aggregates matching sessions into Suggestions, and — after human approval — edits Policy Files or the system prompt and opens a PR.
 ---
 
-# Improvement Agent
+# Agent Improver
 
 Run this on demand — there is no scheduler and no incremental cursor (see
-[ADR-0004](../../../docs/adr/0004-improvement-agent-is-a-local-skill.md)).
+[ADR-0004](../../../docs/adr/0004-agent-improver-is-a-local-skill.md)).
 Every run analyzes every session currently available.
 
 ## 1. Pull session data

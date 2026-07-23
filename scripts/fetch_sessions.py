@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Pull every Support Agent session and its full transcript to local disk.
 
-This is the data-gathering step the Improvement Agent skill runs first (see
-.claude/skills/improvement-agent/SKILL.md): the Sessions API only supports
+This is the data-gathering step the Agent Improver skill runs first (see
+.claude/skills/agent-improver/SKILL.md): the Sessions API only supports
 list + per-session retrieve, with no bulk export, so this walks both and
 writes one transcript per session for the skill to read directly.
 
