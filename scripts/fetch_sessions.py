@@ -59,7 +59,7 @@ def main() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     index = []
-    for session in client.beta.sessions.list():
+    for session in client.beta.sessions.list(include_archived=True):
         transcript = transcript_for(client, session)
         out_path = OUTPUT_DIR / f"{session.id}.json"
         out_path.write_text(json.dumps(transcript, indent=2, default=str))
