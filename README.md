@@ -35,6 +35,21 @@ never has to ask. This project targets the second failure mode:
   This keeps the self-improvement loop auditable instead of an opaque
   agent silently rewriting its own instructions.
 
+## Examples
+
+Chatting with the deployed Support Agent (`uv run scripts/chat.py`). It
+checks the manifest, finds no onboarding Policy File, and redirects to HR
+instead of inventing an answer:
+
+![Chatting with the Support Agent about onboarding](./screenshots/bot_run_script.png)
+
+The `agent-improver` skill surfacing a Suggestion from past sessions — here,
+a Policy File content gap where the wellness-stipend receipt deadline (30
+days) conflicts with the general expense reimbursement deadline (45 days) —
+awaiting human approval before any file is edited:
+
+![Agent Improver skill presenting a Suggestion for approval](./screenshots/improvement_skill.png)
+
 ## Architecture
 
 Two Managed Agents deployments share one memory store of Policy Files:
