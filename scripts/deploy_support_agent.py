@@ -10,8 +10,8 @@ reused, not recreated.
     python scripts/deploy_support_agent.py --update-agent
 
 --update-agent publishes the current agents/support_agent/system_prompt.md
-as a new Agent version (existing sessions keep running on their pinned
-version; new sessions pick up the update).
+and MODEL (common.py) as a new Agent version (existing sessions keep
+running on their pinned version; new sessions pick up the update).
 """
 from __future__ import annotations
 
@@ -73,6 +73,7 @@ def ensure_agent(client, deployment: Deployment, update: bool) -> None:
             deployment.agent_id,
             version=deployment.agent_version,
             system=system_prompt,
+            model=MODEL,
         )
         deployment.agent_version = agent.version
         deployment.save()
