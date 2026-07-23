@@ -6,4 +6,4 @@ skill that reviews past sessions and proposes Policy File or system-prompt
 fixes for human approval.
 
 See `CLAUDE.md` for setup and `CONTEXT.md` for domain language and platform
-facts.
+facts. See `architecture.drawio` for the system architecture diagram.
