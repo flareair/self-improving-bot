@@ -1,6 +1,0 @@
-# Managed Agents (beta) — Agents/Environments/Memory Stores/Sessions all live
-# under client.beta.* in a recent SDK release. If any of those namespaces are
-# missing, run: pip install -U anthropic
-anthropic>=0.60.0
-PyYAML>=6.0
-python-dotenv>=1.0.0

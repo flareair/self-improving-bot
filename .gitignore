@@ -6,3 +6,4 @@ __pycache__/
 *.pyc
 .managed_agents_config.json
 analysis/
+.venv/
