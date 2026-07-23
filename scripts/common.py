@@ -27,7 +27,7 @@ MEMORY_STORE_NAME = "policies"
 MANIFEST_PATH = "/_manifest.json"
 AGENT_NAME = "Support Agent"
 ENVIRONMENT_NAME = "support-agent-env"
-MODEL = "claude-opus-4-8"
+MODEL = "claude-haiku-4-5-20251001"
 
 
 def get_client() -> anthropic.Anthropic:
