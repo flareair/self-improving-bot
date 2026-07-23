@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="drawio-skill-cli">
   <diagram name="Page-1" id="0">
-    <mxGraphModel dx="2424" dy="2216" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="760" pageHeight="392" background="#FFFFFF" math="1" shadow="0">
+    <mxGraphModel dx="2198" dy="2216" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="760" pageHeight="392" background="#FFFFFF" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -70,18 +70,20 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RlVFO93jehndt3vU5E4P-34" parent="1" style="shape=document;boundedLbl=1;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#CBD5E1;strokeWidth=1.5;fontColor=#1E293B;fontSize=13;fontFamily=Inter, Roboto, system-ui, -apple-system, sans-serif;verticalAlign=middle;align=center" value="Suggested documentation updates" vertex="1">
+        <mxCell id="RlVFO93jehndt3vU5E4P-34" parent="1" style="shape=document;boundedLbl=1;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#CBD5E1;strokeWidth=1.5;fontColor=#1E293B;fontSize=13;fontFamily=Inter, Roboto, system-ui, -apple-system, sans-serif;verticalAlign=middle;align=center" value="Suggested policy updates" vertex="1">
           <mxGeometry height="60" width="120" x="736" y="-320" as="geometry" />
         </mxCell>
         <mxCell id="K27wWC6wkN7WmZvC_m9p-11" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Original design flaws:&lt;/h1&gt;&lt;p&gt;- All knowledge is written into context of each agent -&amp;gt; not scalable, bloats the context&lt;/p&gt;&lt;p&gt;- agent copies policies into memories - subject of drift/hallucinations&lt;/p&gt;&lt;p&gt;- Single read/write storage for every type of insight&lt;/p&gt;&lt;p&gt;- Agents operate on memories written by other agents - propt to injections&lt;/p&gt;" vertex="1">
           <mxGeometry height="200" width="344" x="-232" y="-376" as="geometry" />
         </mxCell>
-        <mxCell id="K27wWC6wkN7WmZvC_m9p-12" edge="1" parent="1" source="RlVFO93jehndt3vU5E4P-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.002;entryY=0.611;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" target="5">
+        <mxCell id="K27wWC6wkN7WmZvC_m9p-12" edge="1" parent="1" source="RlVFO93jehndt3vU5E4P-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="928" y="-290" />
-              <mxPoint x="928" y="33" />
+              <mxPoint x="928" y="-480" />
+              <mxPoint x="200" y="-480" />
             </Array>
+            <mxPoint x="200" y="-216" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="K27wWC6wkN7WmZvC_m9p-13" edge="1" parent="1" source="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.997;entryY=0.816;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" target="5">
@@ -202,11 +204,12 @@
         <mxCell id="CozKX9dai0k6KvKdKJ_9-46" parent="1" style="shape=document;boundedLbl=1;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#CBD5E1;strokeWidth=1.5;fontColor=#1E293B;fontSize=13;fontFamily=Inter, Roboto, system-ui, -apple-system, sans-serif;verticalAlign=middle;align=center" value="Suggested documentation updates" vertex="1">
           <mxGeometry height="60" width="120" x="1872" y="-308" as="geometry" />
         </mxCell>
-        <mxCell id="CozKX9dai0k6KvKdKJ_9-47" edge="1" parent="1" source="CozKX9dai0k6KvKdKJ_9-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.002;entryY=0.611;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" target="CozKX9dai0k6KvKdKJ_9-30">
+        <mxCell id="CozKX9dai0k6KvKdKJ_9-47" edge="1" parent="1" source="CozKX9dai0k6KvKdKJ_9-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=80;entryDy=65;entryPerimeter=0;dashed=1;" target="CozKX9dai0k6KvKdKJ_9-52">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="2064" y="-278" />
-              <mxPoint x="2064" y="45" />
+              <mxPoint x="2064" y="-128" />
+              <mxPoint x="1960" y="-128" />
             </Array>
           </mxGeometry>
         </mxCell>
