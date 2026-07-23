@@ -1,3 +1,8 @@
-.claude
+.claude/*
+!.claude/skills/
 .agents
 .env
+__pycache__/
+*.pyc
+.managed_agents_config.json
+analysis/
