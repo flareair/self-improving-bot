@@ -1,9 +1,15 @@
 <mxfile host="Electron" agent="drawio-skill-cli">
   <diagram name="Page-1" id="0">
-    <mxGraphModel dx="2424" dy="1824" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="760" pageHeight="392" background="#FFFFFF" math="1" shadow="0">
+    <mxGraphModel dx="2424" dy="2216" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="760" pageHeight="392" background="#FFFFFF" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="O03uXfAqKyq_xQbpwgVt-15" edge="1" parent="1" source="O03uXfAqKyq_xQbpwgVt-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="O03uXfAqKyq_xQbpwgVt-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O03uXfAqKyq_xQbpwgVt-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=bottom;" value="Claude Managed Agents" vertex="1">
+          <mxGeometry height="248" width="384" x="-384" y="-896" as="geometry" />
+        </mxCell>
         <mxCell id="2" parent="1" style="rounded=1;arcSize=50;html=1;whiteSpace=wrap;fillColor=#F1F5F9;strokeColor=#64748B;strokeWidth=1.5;fontColor=#1E293B;fontSize=13;fontFamily=Inter, Roboto, system-ui, -apple-system, sans-serif;verticalAlign=middle;align=center" value="Session 1" vertex="1">
           <mxGeometry height="40" width="80" x="272" y="88" as="geometry" />
         </mxCell>
@@ -35,18 +41,6 @@
         </mxCell>
         <mxCell id="RlVFO93jehndt3vU5E4P-37" edge="1" parent="1" source="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="RlVFO93jehndt3vU5E4P-34">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="RlVFO93jehndt3vU5E4P-38" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="9">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="312" y="-370" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="RlVFO93jehndt3vU5E4P-39" connectable="0" parent="RlVFO93jehndt3vU5E4P-38" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Further improvement:&lt;div&gt;- Look directly into sessions to optimize them&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="0.0881" y="1" as="geometry">
-            <mxPoint x="33" y="39" as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="9" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;fillColor=#DBEAFE;strokeColor=#2563EB;strokeWidth=1.5;fontColor=#1E293B;fontSize=13;fontFamily=Inter, Roboto, system-ui, -apple-system, sans-serif;verticalAlign=middle;align=center" value="Curator Agent" vertex="1">
           <mxGeometry height="60" width="120" x="512" y="-400" as="geometry" />
@@ -250,6 +244,18 @@
           <mxGeometry relative="1" x="-0.437" y="2" as="geometry">
             <mxPoint x="-37" y="-2" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="O03uXfAqKyq_xQbpwgVt-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Agent&lt;div&gt;(system prompt, MCP config, versioning etc)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="-352" y="-864" as="geometry" />
+        </mxCell>
+        <mxCell id="O03uXfAqKyq_xQbpwgVt-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Environment&lt;div&gt;(exec env template)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="-352" y="-744" as="geometry" />
+        </mxCell>
+        <mxCell id="O03uXfAqKyq_xQbpwgVt-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Memory&lt;div&gt;(/mnt/memory...)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="-160" y="-804" as="geometry" />
+        </mxCell>
+        <mxCell id="O03uXfAqKyq_xQbpwgVt-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Session&lt;div&gt;(Instace of agent running on env with memory mounted)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="176" y="-802" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

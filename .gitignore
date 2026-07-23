@@ -9,3 +9,4 @@ __pycache__/
 .managed_agents_config.json
 analysis/
 .venv/
+*.bkp
