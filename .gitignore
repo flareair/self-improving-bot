@@ -1,5 +1,7 @@
 .claude/*
 !.claude/skills/
+.claude/skills/*
+!.claude/skills/improvement-agent/
 .agents
 .env
 __pycache__/
